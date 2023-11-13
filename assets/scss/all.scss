@@ -1,11 +1,19 @@
 @import "../../node_modules/bootstrap/scss/functions";
 //utils
 @import './utils/variables';//放第一位，因有變數
-@import './utils/reset';
+//bootstrap
+@import "../../node_modules/bootstrap";
+
 @import './utils/base';
 
+
+//layout
+@import './layout/header.scss';
+@import './layout/footer.scss';
+
+
 //pages
-@import './pages/glasses.scss';
+@import './pages/index.scss';
 @import './pages/series1.scss';
 @import './pages/series2.scss';
 @import './pages/store.scss';
@@ -18,9 +26,7 @@
 @import './pages/blog.scss';
 @import './pages/valentine special.scss';
 
-//layout
-@import './layout/header.scss';
-@import './layout/footer.scss';
+
 
 //bootstrap
 @import "../../node_modules/bootstrap";
