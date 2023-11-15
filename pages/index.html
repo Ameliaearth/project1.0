@@ -16,9 +16,9 @@
   <body>
   <%- include('./layout/header'); -%>
 
-    <div>
-      <img class="position-relative img-fluid" src="../assets/images/home-header.png" alt="背景圖">
-      <div class="list1 position-absolute text-end">
+    <div class="position-relative">
+      <img class="img-fluid" src="../assets/images/home-header.png" alt="背景圖">
+      <div class="container position-absolute top-50 end-1 text-end">
         <h3 class="fw-bold f-cor fs-36">Promise-Desert 2020 早春系列</h3>
         <h2 class="fw-bold f-cor fs-64">看得清，才能看得遠</h2>
         <a class="list2 text-decoration-none text-light bg-danger" href="#">立即購買</a>
@@ -58,17 +58,17 @@
     <div class="container py-80">
       <div class="row">
         <h3 class="fw-bold text-center f-cor fs-48 mb-4">經典系列鏡框</h3>
-        <ul class="list-unstyled d-flex justify-content-center align-items-center">
+        <ul class="list-unstyled d-flex justify-content-md-center align-items-md-center">
           <li class="me-4">
-            <img src="../assets/images/home-section3-1.png" height="416" alt="OPTICAL">
+            <img class="img-fluid" src="../assets/images/home-section3-1.png" height="416" alt="OPTICAL">
             <p class="fw-bold fst-italic f2-cor fs-48 text-center">OPTICAL</p>
           </li>
           <li class="me-4">
-            <img src="../assets/images/home-section3-2.png" height="416" alt="SUNGLASSES">
+            <img class="img-fluid" src="../assets/images/home-section3-2.png" height="416" alt="SUNGLASSES">
             <p class="fw-bold fst-italic f2-cor fs-48 text-center">SUNGLASSES</p>
           </li>
           <li>
-            <img src="../assets/images/home-section3-3.png" height="416" alt="FUNCTIONAL">
+            <img class="img-fluid" src="../assets/images/home-section3-3.png" height="416" alt="FUNCTIONAL">
             <p class="fw-bold fst-italic f2-cor fs-48 text-center">FUNCTIONAL</p>
           </li>
         </ul>
@@ -82,11 +82,11 @@
           <h3 class="fw-bold text-center text-light fs-48 mb-4">聯名設計鏡框</h3>
           <ul class="list-unstyled d-flex justify-content-md-center align-items-md-center">
             <li>
-              <img src="../assets/images/home-section4-1.png" width="648" height="240" alt="DOUBLE A+">
+              <img class="img-fluid" src="../assets/images/home-section4-1.png" width="648" height="240" alt="DOUBLE A+">
               <p class="fw-bold fst-italic f2-cor fs-48 text-center bg-white list4">DOUBLE A+</p>
             </li>
             <li>
-              <img src="../assets/images/home-section4-2.png" width="648" height="240" alt="YOUTH">
+              <img class="img-fluid" src="../assets/images/home-section4-2.png" width="648" height="240" alt="YOUTH">
               <p class="fw-bold fst-italic f2-cor fs-48 text-center bg-white list5">YOUTH</p>
             </li>
           </ul>
@@ -94,7 +94,71 @@
       </div>
     </div>
 
-    
+    <div class="container py-80">
+      <h3 class="fw-bold text-center f-cor fs-48 mb-4">顧客推薦</h3>
+      <ul class="list-unstyled d-flex justify-content-md-center align-items-md-center">
+        <li class="shadow-sm me-4 bg-body rounded">
+          <img class="img-fluid " src="../assets/images/home-section5-1.png" width="306" height="306" alt="Jessy">
+          <h5 class="fs-6 pt-3 px-3">Jessy</h5>
+          <p class="fs-6 px-3 pb-72">眼鏡品質優良，下次還會想來這邊購<br>
+            買！</p>
+          <p class="mb-auto fs-6 pb-3 px-3 bg-h">2021/06/20</p>
+        </li>
+        <li class="shadow-sm me-4 bg-body rounded">
+          <img class="img-fluid" src="../assets/images/home-section5-2.png" width="306" height="306" alt="凱倫">
+          <h5 class="fs-6 pt-3 px-3">凱倫</h5>
+          <p class="fs-6 px-3 pb-72">做工細緻、鏡架很輕盈，待久也不會<br>
+            覺得有負擔，推薦給大家！</p>
+          <p class="mb-auto fs-6 pb-3 px-3 bg-h">2021/04/18</p>
+        </li>
+        <li class="shadow-sm me-4 bg-body rounded">
+          <img class="img-fluid" src="../assets/images/home-section5-3.png" width="306" height="306" alt="悠悠">
+          <h5 class="fs-6 pt-3 px-3">悠悠</h5>
+          <p class="fs-6 px-3 pb-72">謝謝客服人員的詳細回答，成功買到<br>
+            了喜歡的眼鏡，下次會再回購！</p>
+          <p class="mb-auto fs-6 pb-3 px-3 bg-h">2020/12/25</p>
+        </li>
+        <li class="shadow-sm me-4 bg-body rounded">
+          <img class="img-fluid" src="../assets/images/home-section5-4.png" width="306" height="306" alt="Kyuan">
+          <h5 class="fs-6 pt-3 px-3">Kyuan</h5>
+          <p class="fs-6 px-3 pb-72">服務很好，品質沒有任何問題，非常<br>
+            喜歡。</p>
+          <p class="mb-auto fs-6 pb-3 px-3 bg-h">2020/10/31</p>
+        </li>
+      </ul>
+    </div>
+
+    <from action="/index.html" method="post">
+      <div class="bg-p">
+        <div class="container py-80">
+          <div class="row g-3">
+
+            <div class="d-flex justify-content-center align-items-center flex-md-column mb-4">
+              <h3 class="fw-bold text-center f-cor fs-48 mb-4">聯絡我們</h3>
+              <p class="fs-6 text-start">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若<br>
+                仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
+            </div>
+
+            <label for="person mb-8 fs-6">姓名</label>
+            <input type="person mb-3 bg-p" type="text" placeholder="陳小明" name="person">
+            <label for="number mb-8 fs-6">聯絡電話</label>
+            <input type="number mb-3 bg-p" type="text" placeholder="0912-345-678" name="number">
+            <label for="mail mb-8 fs-6">電子郵件</label>
+            <input type="mail mb-3 bg-p" type="email" placeholder="example@email.com" name="email">
+            <label for="mail mb-8 fs-6">意見反應</label>
+            <textarea name="content" cols="30" rows="10"></textarea>
+
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label fs-6" for="flexCheckDefault">
+                我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。
+              </label>
+            </div>
+
+            <a class="text-decoration-none text-light text-center bg-danger mx-auto" href="#">確認送出</a>
+          </div>
+        </div>
+      </div>
 
   <%- include('./layout/footer'); -%>
 
