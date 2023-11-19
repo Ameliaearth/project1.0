@@ -17,7 +17,8 @@
   <%- include('./layout/header'); -%>
 
     <div class="position-relative">
-      <img class="img-fluid" src="../assets/images/home-header.png" alt="背景圖">
+      <div class="logo2">logo2</div>
+      <!--<img class="logo2" src="../assets/images/home-header.png" alt="背景圖">-->
       <div class="container position-absolute top-50 end-1 text-end">
         <h3 class="fw-bold f-cor fs-36">Promise-Desert 2020 早春系列</h3>
         <h2 class="fw-bold f-cor fs-64">看得清，才能看得遠</h2>
@@ -58,17 +59,17 @@
     <div class="container py-80">
       <div class="row">
         <h3 class="fw-bold text-center f-cor fs-48 mb-4">經典系列鏡框</h3>
-        <ul class="list-unstyled d-flex justify-content-md-center align-items-md-center">
+        <ul class="list-unstyled d-flex justify-content-sm-center align-items-sm-center flex-sm-column flex-md-row">
           <li class="me-4">
-            <img class="img-fluid" src="../assets/images/home-section3-1.png" height="416" alt="OPTICAL">
+            <img class="mx-auto d-block" src="../assets/images/home-section3-1.png" height="416" alt="OPTICAL">
             <p class="fw-bold fst-italic f2-cor fs-48 text-center">OPTICAL</p>
           </li>
           <li class="me-4">
-            <img class="img-fluid" src="../assets/images/home-section3-2.png" height="416" alt="SUNGLASSES">
+            <img class="mx-auto d-block" src="../assets/images/home-section3-2.png" height="416" alt="SUNGLASSES">
             <p class="fw-bold fst-italic f2-cor fs-48 text-center">SUNGLASSES</p>
           </li>
           <li>
-            <img class="img-fluid" src="../assets/images/home-section3-3.png" height="416" alt="FUNCTIONAL">
+            <img class="mx-auto d-block" src="../assets/images/home-section3-3.png" height="416" alt="FUNCTIONAL">
             <p class="fw-bold fst-italic f2-cor fs-48 text-center">FUNCTIONAL</p>
           </li>
         </ul>
@@ -76,11 +77,12 @@
     </div>
 
     <div class="position-relative">
-      <img class="img-fluid" src="../assets/images/index-bg.png" alt="聯名設計鏡框">
+      <div class="logo3">logo3</div>
+      <!--<img class="img-fluid" src="../assets/images/index-bg.png" alt="聯名設計鏡框">-->
       <div class="container py-80">
         <div class="position-absolute list3">
           <h3 class="fw-bold text-center text-light fs-48 mb-4">聯名設計鏡框</h3>
-          <ul class="list-unstyled d-flex justify-content-md-center align-items-md-center">
+          <ul class="list-unstyled d-flex justify-content-center align-items-center flex-column flex-md-row">
             <li>
               <img class="img-fluid" src="../assets/images/home-section4-1.png" width="648" height="240" alt="DOUBLE A+">
               <p class="fw-bold fst-italic f2-cor fs-48 text-center bg-white list4">DOUBLE A+</p>
@@ -130,30 +132,32 @@
 
     <from action="/index.html" method="post">
       <div class="bg-p">
-        <div class="container py-80">
-          <div class="row g-3">
+        <div class="container d-flex justify-content-center py-80">
+          <div class="row w-50 p-3">
 
-            <div class="d-flex justify-content-center align-items-center flex-column mb-4">
+            <div class="col d-flex justify-content-center flex-column mb-4">
               <h3 class="fw-bold text-center f-cor fs-48 mb-4">聯絡我們</h3>
               <p class="fs-6 text-start">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若<br>
                 仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
-            </div>
 
-            <div class="d-flex justify-content-start align-items-start flex-column w-auto">
               <label for="person mb-8 fs-6">姓名</label>
-              <input type="person mb-3 bg-p" type="text" placeholder="陳小明" name="person">
+              <input type="person mb-3 bg-p lh-base" type="text" placeholder="陳小明" name="person">
               <label for="number mb-8 fs-6">聯絡電話</label>
               <input type="number mb-3 bg-p" type="text" placeholder="0912-345-678" name="number">
-              <label for="mail mb-8 fs-6">電子郵件</label>
+              <label for="mail mb-8 fs-6 lh-base">電子郵件</label>
               <input type="mail mb-3 bg-p" type="email" placeholder="example@email.com" name="email">
-              <label for="mail mb-8 fs-6">意見反應</label>
+              <label for="mail mb-8 fs-6 lh-base">意見反應</label>
               <textarea name="content" cols="30" rows="10"></textarea>
             
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label fs-6" for="flexCheckDefault">
-                我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。
-              </label>
-              <a class="text-decoration-none text-light text-center bg-danger mx-auto" href="#">確認送出</a>
+              <div class="d-flex mb-5">
+                <input type="checkbox" value="text" id="flexCheckDefault">
+                <label class="ml-4 fs-6" for="flexCheckDefault">
+                  我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。
+                </label>
+              </div>
+              <div class="d-flex justify-content-center">
+                <a class="text-decoration-none text-center text-light bg-red list6 w-50" href="#">確認送出</a>
+              </div>
             </div>
 
           </div>

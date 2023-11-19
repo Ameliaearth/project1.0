@@ -8,6 +8,9 @@ a:hover{
 .bg-red{
     background-color: #AA0601;
 }
+.list7{
+    padding: 0;
+}
 
 //文字
 .fs-36{
@@ -25,18 +28,10 @@ a:hover{
 }
 
 //間距
-.pr-64{
-    margin-right: 64px;
+.my-12{
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
-.py-12{
-    padding-top: 12px;
-    padding-bottom: 12px;
-}
-.py-80{
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
-
 .mr-32{
     margin-right: 32px;
 }
@@ -47,8 +42,24 @@ a:hover{
 .mb-8{
     margin-bottom: 8px;
 }
+.ml-4{
+    margin-left: 4px;
+}
+.mb-32{
+    margin-bottom: 32px;
+}
 
 
+.pr-64{
+    margin-right: 64px;
+}
 .pb-72{
     margin-bottom: 72px;
+}
+.py-80{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.pt-32{
+    padding-top: 32px;
 }
