@@ -2,6 +2,12 @@
     box-sizing:border-box;
 }
 
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
 a:hover{
     opacity: 0.7;
 }
@@ -49,14 +55,26 @@ a:hover{
 .mb-8{
     margin-bottom: 8px;
 }
+.mr-8{
+    margin-right: 8px;
+}
 .ml-4{
     margin-left: 4px;
 }
 .mb-32{
     margin-bottom: 32px;
 }
+.mb-80{
+    margin-bottom: 80px;
+}
 .mt-80{
     margin-top: 80px;
+}
+.mb-33{
+    margin-bottom: 33px;
+}
+.mb-40{
+    margin-bottom: 40px;
 }
 
 
