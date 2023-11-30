@@ -63,12 +63,16 @@
     max-width:100%;
     height: 600px;
     overflow:hidden;
-
     white-space:nowrap;
     background-size: cover;
     background-repeat: no-repeat;
     @include pad{
         background-image:url(../images/index-bg-sm.png);
+        height: 960px;
+    }
+    @include mobile{
+        background-image:url(../images/index-bg-md.png);
+        height: 820px;
     }
 }
 

@@ -1,0 +1,42 @@
+@mixin pad{
+    @media(max-width:768px){
+        @content;
+    }
+}
+
+@mixin mobile{
+    @media(max-width:375px){
+        @content;
+    }
+}
+
+.pic5{
+    background-image:url(../images/product-header-3.png);
+    text-indent:125em;
+    //max-width:100%;
+    width: 960px;
+    height: 296px;
+    overflow:hidden;
+    background-position: center center;
+    white-space:nowrap;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include pad{
+        background-image:url(../images/product-header-sm-3.png);
+    }
+}
+.pic6{
+    background-image:url(../images/product-header-4.png);
+    text-indent:125em;
+    //max-width:100%;
+    width: 960px;
+    height: 296px;
+    overflow:hidden;
+    background-position: center center;
+    white-space:nowrap;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include pad{
+        background-image:url(../images/product-header-sm-4.png);
+    }
+}
